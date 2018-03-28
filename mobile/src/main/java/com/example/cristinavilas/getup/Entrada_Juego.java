@@ -1,6 +1,7 @@
 package com.example.cristinavilas.getup;
 
 import android.content.Intent;
+import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -10,13 +11,32 @@ public class Entrada_Juego extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_entrada__juego);
-        try {
-            Thread.sleep(400);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
+        countTimer();
+
+
+    }
+
+    private void menuInicio() {
+
         Intent go=new Intent(this,Menu_Alarma.class);
+        startActivity(go);
+    }
+
+    private void countTimer() {
+
+        new CountDownTimer(5000, 1000) {
+            @Override
+            public void onTick(long l) {
 
 
+            }
+
+            @Override
+            public void onFinish() {
+
+                menuInicio();
+            }
+        }.start();
     }
 }
