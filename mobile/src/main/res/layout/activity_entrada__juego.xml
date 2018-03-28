@@ -11,8 +11,13 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="445dp"
-        app:srcCompat="@drawable/alarma"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="61dp" />
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/alarma" />
 
 </android.support.constraint.ConstraintLayout>
