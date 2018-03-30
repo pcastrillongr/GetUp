@@ -18,9 +18,10 @@
         </activity>
         <activity android:name=".Menu_Alarma" />
         <activity
-            android:name=".CrearAlarma"
+            android:name=".CrearAlarma.CrearAlarma"
             android:label="@string/title_activity_crear_alarma"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 
 </manifest>
