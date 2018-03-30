@@ -21,7 +21,7 @@ public class Entrada_Juego extends AppCompatActivity {
 
     private void menuInicio() {
 
-        Intent go=new Intent(this,CrearAlarma.class);
+        Intent go=new Intent(this,Menu_Alarma.class);
         startActivity(go);
     }
 
