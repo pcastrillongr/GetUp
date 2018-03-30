@@ -1,8 +1,12 @@
-package com.example.cristinavilas.getup.CrearAlarma;
+package com.example.cristinavilas.getup.CrearAlarma.Fragmentos;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+
+import com.example.cristinavilas.getup.CrearAlarma.Fragmentos.Fragmento_1;
+import com.example.cristinavilas.getup.CrearAlarma.Fragmentos.Fragmento_2;
+import com.example.cristinavilas.getup.CrearAlarma.Fragmentos.Fragmento_3;
 
 public class SeleccionarFragment extends FragmentPagerAdapter {
 

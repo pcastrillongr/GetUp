@@ -20,8 +20,8 @@
         <activity
             android:name=".CrearAlarma.CrearAlarma"
             android:label="@string/title_activity_crear_alarma"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".CrearAlarma.AniadirActividades"></activity>
     </application>
 
 </manifest>

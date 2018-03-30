@@ -2,16 +2,14 @@ package com.example.cristinavilas.getup.CrearAlarma;
 
 
 import android.support.design.widget.TabLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TimePicker;
 
 
+import com.example.cristinavilas.getup.CrearAlarma.Fragmentos.SeleccionarFragment;
 import com.example.cristinavilas.getup.R;
 
 public class CrearAlarma extends AppCompatActivity {
@@ -41,7 +39,6 @@ public class CrearAlarma extends AppCompatActivity {
 
         mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
-
 
 
     }

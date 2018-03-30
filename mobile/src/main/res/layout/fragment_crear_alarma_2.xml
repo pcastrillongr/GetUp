@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8fd2ca">
+    android:background="#8fd2ca"
+    tools:context=".Menu_AlarmaCrearAlarma.CrearAlarma">
 
 
     <ToggleButton
-        android:id="@+id/toggleButton5"
+        android:id="@+id/viernes"
         android:layout_width="44dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -20,11 +21,11 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/toggleButton4"
+        app:layout_constraintStart_toEndOf="@+id/jueves"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ToggleButton
-        android:id="@+id/toggleButton6"
+        android:id="@+id/sabado"
         android:layout_width="44dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -36,11 +37,11 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/toggleButton5"
+        app:layout_constraintStart_toEndOf="@+id/viernes"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ToggleButton
-        android:id="@+id/toggleButton3"
+        android:id="@+id/lunes"
         android:layout_width="44dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -56,7 +57,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ToggleButton
-        android:id="@+id/toggleButton4"
+        android:id="@+id/jueves"
         android:layout_width="44dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -68,11 +69,11 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/toggleButton2"
+        app:layout_constraintStart_toEndOf="@+id/miercoles"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ToggleButton
-        android:id="@+id/toggleButton2"
+        android:id="@+id/miercoles"
         android:layout_width="44dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -84,11 +85,11 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/toggleButton"
+        app:layout_constraintStart_toEndOf="@+id/martes"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ToggleButton
-        android:id="@+id/toggleButton"
+        android:id="@+id/martes"
         android:layout_width="44dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -100,11 +101,11 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/toggleButton3"
+        app:layout_constraintStart_toEndOf="@+id/lunes"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ToggleButton
-        android:id="@+id/toggleButton7"
+        android:id="@+id/domingo"
         android:layout_width="44dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -116,7 +117,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/toggleButton6"
+        app:layout_constraintStart_toEndOf="@+id/sabado"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
