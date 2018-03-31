@@ -20,7 +20,5 @@ public class Paso_1 extends AppCompatActivity {
         salida = findViewById(R.id.salida);
         llegada = findViewById(R.id.llegada);
 
-
     }
-
 }
