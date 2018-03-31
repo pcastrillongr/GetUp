@@ -2,10 +2,14 @@ package com.example.cristinavilas.getup.Modelos;
 
 public class Actividad {
 
+    private int id_Actividad;
+    private Alarma alarma;
     private String razon;
     private int tiempo;
 
-    public Actividad(String razon, int tiempo) {
+
+    public Actividad(Alarma alarma,String razon, int tiempo) {
+        this.alarma=alarma;
         this.razon = razon;
         this.tiempo = tiempo;
     }

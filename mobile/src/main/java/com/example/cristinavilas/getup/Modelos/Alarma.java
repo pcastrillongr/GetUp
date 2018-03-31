@@ -7,16 +7,19 @@ import java.util.ArrayList;
 
 public class Alarma {
 
+    private int id_alarma;
     private String lugarSalida;
     private String lugarLlegada;
     private LocalTime horaSalida;
     private LocalTime horaLlegada;
     private ArrayList<Actividad> actividades;
 
-    public Alarma(String lugarSalida, String lugarLlegada, LocalTime horaLlegada) {
+    public Alarma(int id_alarma,String lugarSalida, String lugarLlegada, LocalTime horaLlegada) {
+        this.id_alarma=id_alarma;
         this.lugarSalida = lugarSalida;
         this.lugarLlegada = lugarLlegada;
         this.horaLlegada = horaLlegada;
+        actividades = new ArrayList<Actividad>();
     }
 
     public String getLugarSalida() {

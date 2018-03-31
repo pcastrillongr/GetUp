@@ -30,6 +30,10 @@
         <activity android:name=".CrearAlarma.Paso_2" />
         <activity android:name=".CrearAlarma.Paso_3" />
         <activity android:name=".CrearAlarma.Paso4"></activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAJ_oyrXJCjK0duAsiPWDT2sP30bKR-lRM" />
     </application>
 
 </manifest>
