@@ -6,10 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#8fd2ca"
-    tools:context=".CrearAlarma.CrearAlarma$SeleccionarFragment">
+    tools:context=".CrearAlarma.Paso_1">
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/salida"
         android:layout_width="331dp"
         android:layout_height="45dp"
         android:layout_marginBottom="8dp"
@@ -29,7 +29,7 @@
 
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/llegada"
         android:layout_width="331dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"

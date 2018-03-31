@@ -1,4 +1,4 @@
-package com.example.cristinavilas.getup.CrearAlarma;
+package com.example.cristinavilas.getup.CrearAlarma.Fragmentos;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,15 +8,15 @@ import android.view.ViewGroup;
 
 import com.example.cristinavilas.getup.R;
 
-public class Fragmento_2 extends Fragment {
+public class Fragmento_3 extends Fragment {
 
     private static final String ARG_SECTION_NUMBER = "section_number";
 
-    public Fragmento_2() {
+    public Fragmento_3() {
     }
 
-    public static Fragmento_2 newInstance(int sectionNumber) {
-        Fragmento_2 fragment = new Fragmento_2();
+    public static Fragmento_3 newInstance(int sectionNumber) {
+        Fragmento_3 fragment = new Fragmento_3();
         Bundle args = new Bundle();
         args.putInt(ARG_SECTION_NUMBER, sectionNumber);
         fragment.setArguments(args);
@@ -27,9 +27,8 @@ public class Fragmento_2 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
 
-        View rootView = inflater.inflate(R.layout.fragment_crear_alarma_2, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_crear__alarma_3, container, false);
 
         return rootView;
     }
 }
-
