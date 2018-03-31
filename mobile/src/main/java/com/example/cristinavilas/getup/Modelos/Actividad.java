@@ -1,4 +1,4 @@
-package com.example.cristinavilas.getup;
+package com.example.cristinavilas.getup.Modelos;
 
 public class Actividad {
 

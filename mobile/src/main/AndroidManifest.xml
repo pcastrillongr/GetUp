@@ -23,7 +23,6 @@
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity android:name=".Preferencias_Alarma"></activity>
-
     </application>
 
 </manifest>

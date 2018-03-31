@@ -1,4 +1,6 @@
-package com.example.cristinavilas.getup;
+package com.example.cristinavilas.getup.Modelos;
+
+import com.example.cristinavilas.getup.Modelos.Actividad;
 
 import java.time.LocalTime;
 import java.util.ArrayList;
