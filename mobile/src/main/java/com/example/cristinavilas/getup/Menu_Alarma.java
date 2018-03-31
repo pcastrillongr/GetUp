@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.cristinavilas.getup.CrearAlarma.CrearAlarma;
+import com.example.cristinavilas.getup.CrearAlarma.Paso_1;
 
 public class Menu_Alarma extends AppCompatActivity {
 
@@ -28,7 +29,7 @@ public class Menu_Alarma extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent go=new Intent(getApplicationContext(), CrearAlarma.class);
+                Intent go=new Intent(getApplicationContext(), Paso_1.class);
                 startActivity(go);
 
             }

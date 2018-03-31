@@ -27,7 +27,6 @@
         app:layout_constraintVertical_bias="0.017" />
 
 
-
     <EditText
         android:id="@+id/llegada"
         android:layout_width="331dp"
@@ -41,9 +40,9 @@
         android:text="¿Donde Trabaja?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintHorizontal_bias="0.216"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.129" />
+        app:layout_constraintVertical_bias="0.265" />
 
 </android.support.constraint.ConstraintLayout>

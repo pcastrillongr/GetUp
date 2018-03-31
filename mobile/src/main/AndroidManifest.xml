@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.cristinavilas.getup">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,10 +24,12 @@
         <activity
             android:name=".CrearAlarma.CrearAlarma"
             android:label="@string/title_activity_crear_alarma"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-        <activity android:name=".Preferencias_Alarma"></activity>
-
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Preferencias_Alarma" />
+        <activity android:name=".CrearAlarma.Paso_1" />
+        <activity android:name=".CrearAlarma.Paso_2" />
+        <activity android:name=".CrearAlarma.Paso_3" />
+        <activity android:name=".CrearAlarma.Paso4"></activity>
     </application>
 
 </manifest>
