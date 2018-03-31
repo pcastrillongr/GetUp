@@ -15,8 +15,6 @@ public class Paso_3 extends AppCompatActivity {
     private Button buttonAniadir;
     private Button buttonTerminar;
 
-    private String[] actividades = {"Desayuno","Ducharse","Vestirse"};
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,14 +27,14 @@ public class Paso_3 extends AppCompatActivity {
 
     }
 
-    public void aniadir(View view){
+    public void aniadir(View view) {
 
-        Intent i = new Intent(this,AniadirActividades.class);
+        Intent i = new Intent(getApplicationContext(), AniadirActividades.class);
         startActivity(i);
 
     }
 
-    public void terminar(View view){
+    public void terminar(View view) {
 
     }
 }

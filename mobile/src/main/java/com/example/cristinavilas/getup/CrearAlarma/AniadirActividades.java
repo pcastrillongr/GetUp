@@ -2,11 +2,8 @@ package com.example.cristinavilas.getup.CrearAlarma;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
-
 import com.example.cristinavilas.getup.R;
 
 public class AniadirActividades extends AppCompatActivity {
