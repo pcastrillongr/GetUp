@@ -4,10 +4,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.example.cristinavilas.getup.CrearAlarma.Fragmentos.Fragmento_1;
-import com.example.cristinavilas.getup.CrearAlarma.Fragmentos.Fragmento_2;
-import com.example.cristinavilas.getup.CrearAlarma.Fragmentos.Fragmento_3;
-
 public class SeleccionarFragment extends FragmentPagerAdapter {
 
 
@@ -21,11 +17,11 @@ public class SeleccionarFragment extends FragmentPagerAdapter {
         // Return a PlaceholderFragment (defined as a static inner class below).
         switch (position) {
             case 0:
-                return Fragmento_1.newInstance(position + 1);
+                return Fragmento_Paso_1.newInstance(position + 1);
             case 1:
-                return Fragmento_2.newInstance(position + 1);
+                return Fragmento_Paso_2.newInstance(position + 1);
             case 2:
-                return Fragmento_3.newInstance(position + 1);
+                return Fragmento_Paso_3.newInstance(position + 1);
         }
 
         return null;

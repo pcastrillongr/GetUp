@@ -8,16 +8,16 @@ import android.view.ViewGroup;
 
 import com.example.cristinavilas.getup.R;
 
-public class Fragmento_1 extends Fragment {
+public class Fragmento_Paso_1 extends Fragment {
 
 
     private static final String ARG_SECTION_NUMBER = "section_number";
 
-    public Fragmento_1() {
+    public Fragmento_Paso_1() {
     }
 
-    public static Fragmento_1 newInstance(int sectionNumber) {
-        Fragmento_1 fragment = new Fragmento_1();
+    public static Fragmento_Paso_1 newInstance(int sectionNumber) {
+        Fragmento_Paso_1 fragment = new Fragmento_Paso_1();
         Bundle args = new Bundle();
         args.putInt(ARG_SECTION_NUMBER, sectionNumber);
         fragment.setArguments(args);

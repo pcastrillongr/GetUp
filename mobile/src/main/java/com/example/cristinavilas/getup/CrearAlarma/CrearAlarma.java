@@ -17,7 +17,7 @@ public class CrearAlarma extends AppCompatActivity {
 
     private SeleccionarFragment seleccionarFragment;
     private ViewPager mViewPager;
-    private TimePicker simpleTimePicker;
+
 
 
     @Override
@@ -29,6 +29,7 @@ public class CrearAlarma extends AppCompatActivity {
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         seleccionarFragment = new SeleccionarFragment(getSupportFragmentManager());
+
 
 
         // Set up the ViewPager with the sections adapter.

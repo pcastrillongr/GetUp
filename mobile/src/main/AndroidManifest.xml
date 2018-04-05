@@ -30,6 +30,7 @@
         <activity android:name=".CrearAlarma.Paso_2" />
         <activity android:name=".CrearAlarma.Paso_3" />
         <activity android:name=".CrearAlarma.Paso4"></activity>
+        <activity android:name=".CrearAlarma.AniadirActividades"></activity>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

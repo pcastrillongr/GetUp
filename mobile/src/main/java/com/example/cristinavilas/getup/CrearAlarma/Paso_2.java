@@ -26,6 +26,7 @@ public class Paso_2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.paso2);
+/*
 
         toggleButtonL = findViewById(R.id.lunes);
         toggleButtonM = findViewById(R.id.martes);
@@ -45,6 +46,7 @@ public class Paso_2 extends AppCompatActivity {
         });
         numberpicker.setMaxValue(59);
         numberpicker.setMinValue(0);
+*/
 
 
     }

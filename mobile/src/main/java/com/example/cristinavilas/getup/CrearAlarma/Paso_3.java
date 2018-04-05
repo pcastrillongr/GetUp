@@ -21,7 +21,7 @@ public class Paso_3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.paso3);
 
-        next=(ImageView)findViewById(R.id.next3);
+       /* next=(ImageView)findViewById(R.id.next3);
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -31,7 +31,7 @@ public class Paso_3 extends AppCompatActivity {
         });
     numberPicker3=findViewById(R.id.numberPicker3);
     numberPicker3.setMinValue(0);
-    numberPicker3.setMaxValue(59);
+    numberPicker3.setMaxValue(59);*/
 
     }
 

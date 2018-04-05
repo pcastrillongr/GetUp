@@ -29,7 +29,7 @@ public class Menu_Alarma extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent go=new Intent(getApplicationContext(), Paso_1.class);
+                Intent go=new Intent(getApplicationContext(), CrearAlarma.class);
                 startActivity(go);
 
             }

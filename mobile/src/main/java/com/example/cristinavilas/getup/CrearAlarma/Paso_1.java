@@ -35,9 +35,9 @@ public class Paso_1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.paso1);
+       // setContentView(R.layout.paso1);
 
-        siguiente=(ImageView)findViewById(R.id.next);
+/*        siguiente=(ImageView)findViewById(R.id.next);
         siguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,7 +47,7 @@ public class Paso_1 extends AppCompatActivity {
             }
         });
         salida = findViewById(R.id.salida);
-        llegada = findViewById(R.id.llegada);
+        llegada = findViewById(R.id.llegada);*/
 
 
 
