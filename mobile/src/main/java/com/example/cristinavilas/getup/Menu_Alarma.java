@@ -1,20 +1,18 @@
 package com.example.cristinavilas.getup;
 
 import android.content.Intent;
-import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.example.cristinavilas.getup.CrearAlarma.CrearAlarma;
-import com.example.cristinavilas.getup.CrearAlarma.Paso_1;
+
 
 public class Menu_Alarma extends AppCompatActivity {
 
-    ImageView  anhadiralarma;
-    ImageView  menupreferencias;
+    ImageView anhadiralarma;
+    ImageView menupreferencias;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,14 +20,14 @@ public class Menu_Alarma extends AppCompatActivity {
         setContentView(R.layout.activity_menu__alarma);
 
 
-        anhadiralarma=(ImageView) findViewById(R.id.anhadir);
-        menupreferencias=(ImageView)findViewById(R.id.menu);
+        anhadiralarma = findViewById(R.id.anhadir);
+        menupreferencias = findViewById(R.id.menu);
         anhadiralarma.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
 
-                Intent go=new Intent(getApplicationContext(), CrearAlarma.class);
+                Intent go = new Intent(getApplicationContext(), CrearAlarma.class);
                 startActivity(go);
 
             }
@@ -38,7 +36,7 @@ public class Menu_Alarma extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent go=new Intent(getApplicationContext(), Preferencias_Alarma.class);
+                Intent go = new Intent(getApplicationContext(), Preferencias_Alarma.class);
                 startActivity(go);
 
             }

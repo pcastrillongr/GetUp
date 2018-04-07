@@ -8,22 +8,20 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListAdapter;
 import android.widget.ListView;
 
-import com.example.cristinavilas.getup.CrearAlarma.AniadirActividades;
-import com.example.cristinavilas.getup.Modelos.Actividad;
 import com.example.cristinavilas.getup.R;
 
 import java.util.ArrayList;
 
-import static com.example.cristinavilas.getup.CrearAlarma.AniadirActividades.actividads;
+import static com.example.cristinavilas.getup.CrearAlarma.Fragmentos.SeleccionarFragment.AniadirActividades.actividads;
 
 public class Fragmento_Paso_3 extends Fragment {
 
     private Button btnAniadir;
     private ListView listView;
     private ArrayList<String> aux = new ArrayList<String>();
+
 
     private static final String ARG_SECTION_NUMBER = "section_number";
 
@@ -56,7 +54,7 @@ public class Fragmento_Paso_3 extends Fragment {
 
             public void onClick(View view) {
 
-                Intent i = new Intent(getContext(), AniadirActividades.class);
+                Intent i = new Intent(getContext(), SeleccionarFragment.AniadirActividades.class);
                 startActivity(i);
 
             }
@@ -80,4 +78,6 @@ public class Fragmento_Paso_3 extends Fragment {
         return auxiliar2;
 
     }
+
+
 }

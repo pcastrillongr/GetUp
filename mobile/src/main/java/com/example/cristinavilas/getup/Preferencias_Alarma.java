@@ -89,7 +89,7 @@ public class Preferencias_Alarma extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int which) {
 
                     }
-                }).setIcon(R.drawable.alarma);
+                }).setIcon(R.mipmap.alarma);
                 builder.show();
 
             }

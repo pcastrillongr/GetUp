@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#8fd2ca"
-    tools:context=".CrearAlarma.AniadirActividades">
+    tools:context=".CrearAlarma.Fragmentos.SeleccionarFragment$AniadirActividades">
 
     <Spinner
         android:id="@+id/spinner"
@@ -28,7 +28,6 @@
         android:id="@+id/imageViewDespertarse"
         android:layout_width="199dp"
         android:layout_height="182dp"
-        android:layout_alignEnd="@+id/next2"
         android:layout_below="@+id/textView6"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -41,12 +40,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.735"
-        app:srcCompat="@drawable/getup" />
+        app:srcCompat="@mipmap/levantarse_launcher_foreground" />
     <ImageView
         android:id="@+id/imageViewDesayunar"
         android:layout_width="199dp"
         android:layout_height="182dp"
-        android:layout_alignEnd="@+id/next2"
         android:layout_below="@+id/textView6"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -59,13 +57,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.735"
-        app:srcCompat="@drawable/breakfast" />
+        app:srcCompat="@mipmap/desayuno_launcher_foreground" />
 
     <ImageView
         android:id="@+id/imageViewDucharse"
         android:layout_width="199dp"
         android:layout_height="182dp"
-        android:layout_alignEnd="@+id/next2"
         android:layout_below="@+id/textView6"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -78,13 +75,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.735"
-        app:srcCompat="@drawable/shower" />
+        app:srcCompat="@mipmap/ducharse_launcher_foreground" />
 
     <ImageView
         android:id="@+id/imageViewVestirse"
         android:layout_width="199dp"
         android:layout_height="182dp"
-        android:layout_alignEnd="@+id/next2"
         android:layout_below="@+id/textView6"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -97,12 +93,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.735"
-        app:srcCompat="@drawable/getup" />
+         />
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="199dp"
         android:layout_height="182dp"
-        android:layout_alignEnd="@+id/next2"
         android:layout_below="@+id/textView6"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -115,7 +110,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.735"
-        app:srcCompat="@drawable/getup" />
+         />
 
     <TextView
         android:id="@+id/textView4"
@@ -180,7 +175,8 @@
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="4dp"
@@ -188,10 +184,12 @@
         android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintHorizontal_bias="0.201"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button2"
