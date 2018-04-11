@@ -10,11 +10,15 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
+import com.example.cristinavilas.getup.CrearAlarma.AniadirActividades;
 import com.example.cristinavilas.getup.R;
+
+
 
 import java.util.ArrayList;
 
-import static com.example.cristinavilas.getup.CrearAlarma.Fragmentos.SeleccionarFragment.AniadirActividades.actividads;
+import static com.example.cristinavilas.getup.CrearAlarma.AniadirActividades.actividads;
+
 
 public class Fragmento_Paso_3 extends Fragment {
 
@@ -54,7 +58,7 @@ public class Fragmento_Paso_3 extends Fragment {
 
             public void onClick(View view) {
 
-                Intent i = new Intent(getContext(), SeleccionarFragment.AniadirActividades.class);
+                Intent i = new Intent(getContext(),AniadirActividades.class);
                 startActivity(i);
 
             }
@@ -69,7 +73,9 @@ public class Fragmento_Paso_3 extends Fragment {
         String[] auxiliar2 ={""};
 
         if(!actividads.isEmpty()) {
+            aux.clear();
             for( int i = 0 ; i < actividads.size();i++) {
+
                 aux.add(actividads.get(i).getRazon().toString() + " " + actividads.get(i).getTiempo()+" Minutos");
             }
 

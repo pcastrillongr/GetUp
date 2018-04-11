@@ -8,7 +8,7 @@ import android.widget.ImageView;
 
 import com.example.cristinavilas.getup.CrearAlarma.CrearAlarma;
 
-public class Entrada_Juego extends AppCompatActivity {
+public class Entrada_App extends AppCompatActivity {
 
     private ImageView imageView;
     @Override
@@ -29,7 +29,7 @@ public class Entrada_Juego extends AppCompatActivity {
 
     private void countTimer() {
 
-        new CountDownTimer(5000, 1000) {
+        new CountDownTimer(1000, 1000) {
             @Override
             public void onTick(long l) {
 

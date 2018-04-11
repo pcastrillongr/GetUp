@@ -19,4 +19,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/alarma_launcher_foreground" />
+
 </android.support.constraint.ConstraintLayout>

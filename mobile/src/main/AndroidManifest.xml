@@ -13,7 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Entrada_Juego">
+        <activity android:name=".Entrada_App">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,7 +26,8 @@
             android:label="@string/title_activity_crear_alarma"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Preferencias_Alarma" />
-        <activity android:name=".CrearAlarma.Fragmentos.SeleccionarFragment$AniadirActividades"></activity>
+        <activity android:name=".CrearAlarma.AniadirActividades"></activity>
+
 
 
         <meta-data
