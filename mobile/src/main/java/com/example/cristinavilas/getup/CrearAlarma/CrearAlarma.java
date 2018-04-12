@@ -12,17 +12,18 @@ import android.widget.TimePicker;
 
 import com.example.cristinavilas.getup.CrearAlarma.Fragmentos.SeleccionarFragment;
 import com.example.cristinavilas.getup.Menu_Alarma;
+import com.example.cristinavilas.getup.Modelos.Alarma;
 import com.example.cristinavilas.getup.R;
 
-import static com.example.cristinavilas.getup.CrearAlarma.AniadirActividades.actividads;
+import static com.example.cristinavilas.getup.Container.actividads;
+
 
 public class CrearAlarma extends AppCompatActivity {
 
 
     private SeleccionarFragment seleccionarFragment;
     private ViewPager mViewPager;
-
-
+    private Alarma alarma = new Alarma();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

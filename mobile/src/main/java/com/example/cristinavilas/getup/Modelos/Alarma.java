@@ -14,6 +14,8 @@ public class Alarma {
     private LocalTime horaLlegada;
     private ArrayList<Actividad> actividades;
 
+    public Alarma(){};
+
     public Alarma(int id_alarma,String lugarSalida, String lugarLlegada, LocalTime horaLlegada) {
         this.id_alarma=id_alarma;
         this.lugarSalida = lugarSalida;

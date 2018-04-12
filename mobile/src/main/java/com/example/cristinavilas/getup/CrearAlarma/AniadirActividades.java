@@ -14,7 +14,7 @@ import android.widget.TextView;
 import com.example.cristinavilas.getup.Modelos.Actividad;
 import com.example.cristinavilas.getup.R;
 
-import java.util.ArrayList;
+import static com.example.cristinavilas.getup.Container.actividads;
 
 public class AniadirActividades extends AppCompatActivity {
 
@@ -28,7 +28,7 @@ public class AniadirActividades extends AppCompatActivity {
     private NumberPicker numberPicker;
     private int posicionSpinner;
     private TextView textView;
-    public static ArrayList<Actividad> actividads = new ArrayList<Actividad>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

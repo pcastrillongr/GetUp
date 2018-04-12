@@ -17,7 +17,7 @@ import com.example.cristinavilas.getup.R;
 
 import java.util.ArrayList;
 
-import static com.example.cristinavilas.getup.CrearAlarma.AniadirActividades.actividads;
+import static com.example.cristinavilas.getup.Container.actividads;
 
 
 public class Fragmento_Paso_3 extends Fragment {
