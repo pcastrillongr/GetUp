@@ -16,14 +16,13 @@ public class MiHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db ) {
 
-        db.execSQL("Create table Lugares(idLugar integer,Lugar String);");
-        db.execSQL("Create table Actividad(idAct Integer,idAl integer,razon String,tiempo Integer,foreign key(actividad)references Alarma) ;");
-        db.execSQL("Create table Alarma(Lsalida String,Lllegada String,Hsalida String,Hllegada String,Actividad Integer,foreign key (actividad) references Actividad);");
+        db.execSQL("Create table Lugares(idLugar integer  primary key,Lugar String);");
+        db.execSQL("Create table Actividad(idAct Integer  primary key,razon String,tiempo Integer,idAl integer,foreign key(idAl)references Alarma(idAlarma));");
+        db.execSQL("Create table Alarma(idAlarma Integer primary key,Lsalida String,Lllegada String,Hsalida String,Hllegada String,id_act Integer,foreign key (id_act) references Actividad(idAct));");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-
 
     }
 }

@@ -16,6 +16,7 @@ import com.example.cristinavilas.getup.Modelos.Alarma;
 import com.example.cristinavilas.getup.R;
 
 import static com.example.cristinavilas.getup.Container.actividads;
+import static com.example.cristinavilas.getup.Container.alarmas;
 
 
 public class CrearAlarma extends AppCompatActivity {
@@ -23,7 +24,7 @@ public class CrearAlarma extends AppCompatActivity {
 
     private SeleccionarFragment seleccionarFragment;
     private ViewPager mViewPager;
-    private Alarma alarma = new Alarma();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,4 +55,6 @@ public class CrearAlarma extends AppCompatActivity {
         Intent i = new Intent(this, Menu_Alarma.class);
         startActivity(i);
     }
+
+
 }

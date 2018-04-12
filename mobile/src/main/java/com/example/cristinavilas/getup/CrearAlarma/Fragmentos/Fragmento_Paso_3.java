@@ -1,8 +1,32 @@
 package com.example.cristinavilas.getup.CrearAlarma.Fragmentos;
 
+import android.content.BroadcastReceiver;
+import android.content.ComponentName;
+import android.content.ContentResolver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
+import android.content.IntentSender;
+import android.content.ServiceConnection;
+import android.content.SharedPreferences;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
+import android.content.res.AssetManager;
+import android.content.res.Configuration;
+import android.content.res.Resources;
+import android.database.DatabaseErrorHandler;
+import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Bitmap;
+import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.UserHandle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,18 +35,19 @@ import android.widget.Button;
 import android.widget.ListView;
 
 import com.example.cristinavilas.getup.CrearAlarma.AniadirActividades;
+import com.example.cristinavilas.getup.Menu_Alarma;
+import com.example.cristinavilas.getup.Modelos.Alarma;
 import com.example.cristinavilas.getup.R;
-
-
-
 import java.util.ArrayList;
 
 import static com.example.cristinavilas.getup.Container.actividads;
+import static com.example.cristinavilas.getup.Container.alarmas;
 
 
 public class Fragmento_Paso_3 extends Fragment {
 
     private Button btnAniadir;
+    private Button btnTerminar;
     private ListView listView;
     private ArrayList<String> aux = new ArrayList<String>();
 
@@ -46,12 +71,12 @@ public class Fragmento_Paso_3 extends Fragment {
 
         View rootView = inflater.inflate(R.layout.fragment_crear__alarma_3, container, false);
         btnAniadir = rootView.findViewById(R.id.btnAniadir);
+        btnTerminar= rootView.findViewById(R.id.btnTerminar);
         listView = rootView.findViewById(R.id.listView);
 
-        RellenarArray();
+        rellenarArray();
         ArrayAdapter<String> arrayAdapter;
         arrayAdapter = new ArrayAdapter<String>(rootView.getContext(), android.R.layout.simple_list_item_1, aux);
-
         listView.setAdapter(arrayAdapter);
 
         btnAniadir.setOnClickListener(new View.OnClickListener() {
@@ -65,11 +90,26 @@ public class Fragmento_Paso_3 extends Fragment {
 
         });
 
+        btnTerminar.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Alarma alarma = new Alarma();
+                alarma.setLugarSalida("Malaga");
+                alarmas.add(alarma);
+
+
+                Intent i = new Intent(getContext(), Menu_Alarma.class);
+                startActivity(i);
+            }
+
+
+        });
 
         return rootView;
     }
 
-    private String[] RellenarArray() {
+    private String[] rellenarArray() {
         String[] auxiliar2 ={""};
 
         if(!actividads.isEmpty()) {
