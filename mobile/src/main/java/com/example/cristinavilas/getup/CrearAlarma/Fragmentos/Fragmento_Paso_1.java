@@ -38,9 +38,8 @@ public class Fragmento_Paso_1 extends Fragment {
         salida = rootView.findViewById(R.id.editText);
         llegada = rootView.findViewById(R.id.editText2);
         mapa = rootView.findViewById(R.id.mapView);
-        if(salida.isSelected()){
-            salida.setText("");
-        }
+
+
         return rootView;
     }
 }
